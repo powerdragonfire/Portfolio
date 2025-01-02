@@ -7,7 +7,7 @@ const plausibleSrc = process.env.NEXT_PUBLIC_PLAUSIBLE_SRC!;
 
 
 export function PlausibleAnalytics() {
-  if (process.env.NODE_ENV !== "production") {
+  if (process.env.APP_ENV !== "production") {
     return null;
   }
 

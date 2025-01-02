@@ -28,32 +28,32 @@ export async function GET() {
 
     // 获取今日访问数据
     // 昨天的 yyyy-MM-dd
-    const today = new Date();
-    const yesterday = new Date(today);
-    yesterday.setDate(yesterday.getDate() - 1);
-    const yesterdayStr = yesterday.toISOString().split('T')[0];
+    // const today = new Date();
+    // const yesterday = new Date(today);
+    // yesterday.setDate(yesterday.getDate() - 1);
+    // const yesterdayStr = yesterday.toISOString().split('T')[0];
 
-    // 今天的 yyyy-MM-dd
-    const todayStr = today.toISOString().split('T')[0];
-    const todayResponse = await fetch(`${OPENPANEL_API_URL}/export/events?projectId=${OPENPANEL_PROJECT_ID}&event=screen_view&start=${yesterdayStr}&end=${todayStr}`, {
-      headers: {
-        'openpanel-client-id': OPENPANEL_CLIENT_ID!,
-        'openpanel-client-secret': OPENPANEL_SECRET_ID!,
-      },
-    });
+    // // 今天的 yyyy-MM-dd
+    // const todayStr = today.toISOString().split('T')[0];
+    // const todayResponse = await fetch(`${OPENPANEL_API_URL}/export/events?projectId=${OPENPANEL_PROJECT_ID}&event=screen_view&start=${yesterdayStr}&end=${todayStr}`, {
+    //   headers: {
+    //     'openpanel-client-id': OPENPANEL_CLIENT_ID!,
+    //     'openpanel-client-secret': OPENPANEL_SECRET_ID!,
+    //   },
+    // });
 
     // console.log('todayResponse: ', todayResponse)
-    if (!todayResponse.ok) {
-      throw new Error('Failed to fetch visit stats');
-    }
+    // if (!todayResponse.ok) {
+    //   throw new Error('Failed to fetch visit stats');
+    // }
 
-    const todayData = await todayResponse.json();
+    // const todayData = await todayResponse.json();
     // console.log('todayData: ', todayData)
-    const dailyUV = todayData?.meta?.totalCount;
+    // const dailyUV = todayData?.meta?.totalCount;
 
     return NextResponse.json({
       totalUV,
-      dailyUV,
+      // dailyUV,
     });
   } catch (error) {
     // console.error('Error fetching visit stats:', error);

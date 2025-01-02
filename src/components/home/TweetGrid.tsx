@@ -36,7 +36,7 @@ export const TweetGrid = () => {
   return (
     <div className="columns-1 sm:columns-2 lg:columns-3 gap-4">
       {tweetIds.map((id) => (
-        <ClientTweetCard key={id} id={id} className="shadow-xl mb-4 break-inside-avoid"/>
+        <ClientTweetCard key={id} id={id} className="shadow-xl mb-4 break-inside-avoid" />
       ))}
     </div>
   );

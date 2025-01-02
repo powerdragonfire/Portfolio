@@ -8,7 +8,7 @@ import { GoogleAnalytics as NextGoogleAnalytics } from "@next/third-parties/goog
  * https://analytics.google.com
  */
 export default function GoogleAnalytics() {
-  if (process.env.NODE_ENV !== "production") {
+  if (process.env.APP_ENV !== "production") {
     return null;
   }
 

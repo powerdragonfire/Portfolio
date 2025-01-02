@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "clean": "rmdir /s /q .next || echo .next not found",
+    "build": "npm run clean && next build",
     "start": "next start",
     "lint": "next lint"
   },
@@ -30,9 +31,9 @@
     "cheerio": "^1.0.0",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
+    "coreychiu-portfolio-template": "file:",
     "fast-glob": "^3.3.2",
     "feed": "^4.2.2",
-    "google": "link:@next/third-parties/google",
     "gray-matter": "^4.0.3",
     "lucide-react": "^0.460.0",
     "next": "^14.2.18",

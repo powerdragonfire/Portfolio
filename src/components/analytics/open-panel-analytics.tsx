@@ -6,7 +6,7 @@ import { OpenPanelComponent } from "@openpanel/nextjs";
  * https://docs.openpanel.dev/docs/sdks/nextjs#options
  */
 export default function OpenPanelAnalytics() {
-  if (process.env.NODE_ENV !== "production") {
+  if (process.env.APP_ENV !== "production") {
     return null;
   }
 

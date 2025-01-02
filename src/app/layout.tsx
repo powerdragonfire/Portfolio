@@ -5,6 +5,7 @@ import { Layout } from '@/components/layout/Layout'
 import { Analytics } from "@/components/analytics/analytics";
 import { name, headline, introduction } from '@/config/infoConfig'
 import '@/styles/tailwind.css'
+import 'react-tweet'
 
 export const metadata: Metadata = {
   title: {

@@ -5,24 +5,25 @@ import Link from 'next/link'
 const CustomLink = (props: React.AnchorHTMLAttributes<HTMLAnchorElement>) => {
   const href = props.href
   if (href?.startsWith('/')) {
-    return <Link 
-            href={href} 
-            {...props} 
-            className='text-primary font-semibold decoration-1 hover:decoration-2 underline underline-offset-2' 
-          />
+    return <Link
+      href={href}
+      {...props}
+      className='text-primary font-semibold decoration-1 hover:decoration-2 underline underline-offset-2'
+    />
   }
   if (href?.startsWith('#')) {
     return <a {...props} className='text-primary font-semibold decoration-1 hover:decoration-2 underline underline-offset-2' />
   }
-  return <a 
-          target="_blank"
-          rel="noopener noreferrer nofollow" 
-          {...props} 
-          className='text-primary font-semibold decoration-1 hover:decoration-2 underline underline-offset-2' 
-        />
+  return <a
+    target="_blank"
+    rel="noopener noreferrer nofollow"
+    {...props}
+    className='text-primary font-semibold decoration-1 hover:decoration-2 underline underline-offset-2'
+  />
 }
 
 export const mdxComponents: MDXComponents = {
+  // eslint-disable-next-line jsx-a11y/alt-text
   Image: (props: ImageProps) => <Image {...props} className='rounded-3xl my-6' />,
   a: CustomLink,
   h1: (props: any) => <h1 className="my-6 text-4xl font-bold tracking-tight sm:text-5xl" {...props} />,

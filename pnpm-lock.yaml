@@ -68,15 +68,15 @@ importers:
       clsx:
         specifier: ^2.1.1
         version: 2.1.1
+      coreychiu-portfolio-template:
+        specifier: 'file:'
+        version: file:(acorn@8.14.0)
       fast-glob:
         specifier: ^3.3.2
         version: 3.3.2
       feed:
         specifier: ^4.2.2
         version: 4.2.2
-      google:
-        specifier: link:@next/third-parties/google
-        version: link:@next/third-parties/google
       gray-matter:
         specifier: ^4.0.3
         version: 4.0.3
@@ -1147,6 +1147,9 @@ packages:
 
   concat-map@0.0.1:
     resolution: {integrity: sha512-/Srv4dswyQNBfohGpz9o6Yb3Gz3SrUDqBH5rTuhGR7ahtlbYKnVxw2bCFMRljaA7EXHaXZ8wsHdodFvbkhKmqg==}
+
+  'coreychiu-portfolio-template@file:':
+    resolution: {directory: '', type: directory}
 
   cross-spawn@7.0.6:
     resolution: {integrity: sha512-uV2QOWP2nWzsy2aMp8aRibhi9dlzF5Hgh5SHaB9OiTGEyDTiJJyx0uy51QXdyWbtAHNua4XJzUKca3OzKUd3vA==}
@@ -3970,6 +3973,58 @@ snapshots:
   commander@4.1.1: {}
 
   concat-map@0.0.1: {}
+
+  coreychiu-portfolio-template@file:(acorn@8.14.0):
+    dependencies:
+      '@headlessui/react': 1.7.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@mapbox/rehype-prism': 0.9.0
+      '@mdx-js/loader': 3.1.0(acorn@8.14.0)
+      '@mdx-js/react': 3.1.0(@types/react@18.3.12)(react@18.3.1)
+      '@next/mdx': 14.2.18(@mdx-js/loader@3.1.0(acorn@8.14.0))(@mdx-js/react@3.1.0(@types/react@18.3.12)(react@18.3.1))
+      '@next/third-parties': 15.0.3(next@14.2.18(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)
+      '@openpanel/nextjs': 1.0.6(next@14.2.18(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@phosphor-icons/react': 2.1.7(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@radix-ui/react-dropdown-menu': 2.1.2(@types/react-dom@18.3.1)(@types/react@18.3.12)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@radix-ui/react-slot': 1.1.0(@types/react@18.3.12)(react@18.3.1)
+      '@tailwindcss/typography': 0.5.15(tailwindcss@3.4.15)
+      '@types/mdx': 2.0.13
+      '@types/node': 20.17.6
+      '@types/react': 18.3.12
+      '@types/react-dom': 18.3.1
+      '@types/webpack-env': 1.18.5
+      autoprefixer: 10.4.20(postcss@8.4.49)
+      cheerio: 1.0.0
+      class-variance-authority: 0.7.0
+      clsx: 2.1.1
+      fast-glob: 3.3.2
+      feed: 4.2.2
+      gray-matter: 4.0.3
+      lucide-react: 0.460.0(react@18.3.1)
+      next: 14.2.18(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      next-mdx-remote: 5.0.0(@types/react@18.3.12)(acorn@8.14.0)(react@18.3.1)
+      next-themes: 0.2.1(next@14.2.18(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      postcss: 8.4.49
+      prism-react-renderer: 2.4.0(react@18.3.1)
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
+      react-github-calendar: 4.5.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      react-icon-cloud: 4.1.4(react@18.3.1)
+      react-tweet: 3.2.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      remark-gfm: 4.0.0
+      tailwind-merge: 2.5.4
+      tailwindcss: 3.4.15
+      tailwindcss-animate: 1.0.7(tailwindcss@3.4.15)
+      typescript: 5.6.3
+    transitivePeerDependencies:
+      - '@babel/core'
+      - '@opentelemetry/api'
+      - '@playwright/test'
+      - acorn
+      - babel-plugin-macros
+      - sass
+      - supports-color
+      - ts-node
+      - webpack
 
   cross-spawn@7.0.6:
     dependencies:

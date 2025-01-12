@@ -358,7 +358,7 @@ export function Header() {
                     >
                       <TypingAnimation
                         className="text-3xl md:text-6xl font-bold tracking-tight"
-                        text={`Hi! My name is ${name}. `}
+                        text={`Hi! My name is ${name} `}
                         duration={150}
                       />
                       👋

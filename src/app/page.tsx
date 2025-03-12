@@ -1,25 +1,18 @@
 
 import { Container } from '@/components/layout/Container'
-import Newsletter from '@/components/home/Newsletter'
-import Feed from '@/components/home/Feed'
 import Career from '@/components/home/Career'
 import Education from '@/components/home/Education'
 import SocialLinks from '@/components/home/SocialLinks'
 import { headline, introduction } from '@/config/infoConfig'
-import { BlogCard } from '@/components/home/BlogCard'
-import { getAllBlogs, type BlogType } from '@/lib/blogs'
 import { ProjectCard } from '@/components/project/ProjectCard'
-import { GithubProjectCard } from '@/components/project/GithubProjectCard'
-import { projectHeadLine, projectIntro, projects, githubProjects, blogHeadLine, blogIntro, techIcons, activityHeadLine, activityIntro } from '@/config/infoConfig'
-import { CustomIcon } from '@/components/shared/CustomIcon'
+import { projectHeadLine, projectIntro, projects, blogHeadLine, blogIntro, techIcons, activityHeadLine, activityIntro } from '@/config/infoConfig'
 import IconCloud from "@/components/ui/icon-cloud";
-import { TweetGrid } from "@/components/home/TweetGrid";
+// import { TweetGrid } from "@/components/home/TweetGrid";
 
 
 
 
 export default async function Home() {
-  let blogList = (await getAllBlogs()).slice(0, 4)
   // console.log('blogList: ', blogList)
 
   return (
@@ -59,20 +52,6 @@ export default async function Home() {
             ))}
           </ul>
         </div>
-        <div className="mx-auto flex flex-col max-w-xl gap-6 lg:max-w-none my-4 py-8 border-t border-muted">
-          <h2 className="flex flex-row items-center justify-start gap-2 text-xl font-semibold tracking-tight md:text-3xl opacity-80 mb-4">
-            <CustomIcon name='github' size={28} />
-            Open Source
-          </h2>
-          <ul
-            role="list"
-            className="grid grid-cols-1 gap-x-8 gap-y-12 sm:grid-cols-2 md:grid-cols-3"
-          >
-            {githubProjects.map((project) => (
-              <GithubProjectCard key={project.name} project={project} titleAs='h3' />
-            ))}
-          </ul>
-        </div>
         <div className="mx-auto flex flex-col max-w-xl gap-6 py-8 my-8 lg:max-w-none border-t border-muted">
           <h2 className="text-3xl font-semibold tracking-tight md:text-5xl opacity-80">
             {blogHeadLine}
@@ -82,31 +61,12 @@ export default async function Home() {
           </p>
         </div>
         <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">
-          {/* left column */}
-          {/* blog */}
-          <div className="flex flex-col gap-16">
-            {blogList.map((blog: BlogType) => (
-              <BlogCard key={blog.slug} blog={blog} titleAs='h3' />
-            ))}
-          </div>
 
           {/* right column */}
           <div className="space-y-10 lg:pl-16 xl:pl-24">
             <Career />
             <Education />
-
-            {/* <Newsletter /> */}
-            {/* <Feed /> */}
           </div>
-        </div>
-        <div className="mx-auto flex flex-col max-w-xl gap-6 lg:max-w-none my-4 py-8 border-t border-muted">
-          <h2 className="text-3xl font-semibold tracking-tight md:text-5xl opacity-80">
-            {activityHeadLine}
-          </h2>
-          <p className="text-base text-muted-foreground max-w-2xl mb-2">
-            {activityIntro}
-          </p>
-          <TweetGrid />
         </div>
       </Container>
     </>

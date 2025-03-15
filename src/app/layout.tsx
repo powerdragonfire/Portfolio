@@ -1,4 +1,3 @@
-
 import { Providers } from '@/app/providers'
 import { Layout } from '@/components/layout/Layout'
 import '@/styles/tailwind.css'

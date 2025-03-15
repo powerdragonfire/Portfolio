@@ -1,6 +1,6 @@
 // changelog
-export const changelogHeadLine = "What's new about this site"
-export const changelogIntro = 'Check out the latest changes to this site.'
+export const changelogHeadLine = 'My Journey'
+export const changelogIntro = 'Find out why I got into Full-Stack Development.'
 
 // changelog
 export type ChangelogItemType = {

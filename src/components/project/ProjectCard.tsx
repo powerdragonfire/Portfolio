@@ -1,6 +1,6 @@
 "use client"
 
-import { ArrowRightIcon, HashIcon } from 'lucide-react'
+import { HashIcon } from 'lucide-react'
 import Image from 'next/image'
 import { ArrowUpRight } from '@phosphor-icons/react'
 import { ProjectItemType } from '@/config/infoConfig'

@@ -15,51 +15,52 @@ export type ChangelogItemType = {
 
 export const changelogList: Array<ChangelogItemType> = [
   {
-    date: '2024-11-18',
+    date: 'June 2022 - Sept 2022',
     content: [
       {
-        title: '💡 Idea come up',
+        title: '♻️ Green Sustainable Delivery Roadmap: M&S Summer Internship',
         description:
-          "I want to have a portfolio websit. The website doesn't need to be so fancy but should have a good design. It need to show all my projects and have a blog section to share my ideas and my development experience.",
+          "Received a return offer to join the Technology Graduate Scheme after connecting with Software Engineers, tailoring my Green Consulting Project into a UX Website implementation. Unfortunately, this was changed to a Corporate Graduate offer, due to the removal of the Tech Grad scheme. I took a risk in refusing this offer and following my passion, starting an MSc Computer Science master's conversion at Bristol University.",
       },
     ],
   },
   {
-    date: '2024-11-22',
+    date: 'Sept 2022 - June 2023',
     content: [
       {
-        title: '🛫 Project deployed',
+        title: '🔍 Embracing My Superpower',
         description:
-          "My portfolio website's first version finished building and deployed",
+          'I redefined ADHD as a strength. Hyper-focus became my ally, powering my problem-solving skills and igniting creative breakthroughs in tech and process automation."',
       },
     ],
   },
   {
-    date: '2024-12-23',
+    date: 'Jan 2023 - Sept 2023',
     content: [
       {
-        title: '🐍 Add GitHub Contribution snake',
+        title:
+          '🏚️ Leading Talent Aquisition and Management at Project Destined',
         description:
-          'Add GitHub Contribution snake to showcase my GitHub contribution in a funny way',
+          'Driving change with over 2,500 student recruits, I championed digital transformations—automating workflows, enhancing marketing strategies, and crafting interactive dashboards.',
       },
     ],
   },
   {
-    date: '2024-12-24',
+    date: 'Sept 2024 - Sept 2025',
     content: [
       {
-        title: '📦 Add resources page',
+        title: '🧑‍🎓 MSc Computer Science at Bristol University',
         description:
-          'Add resources page to list my using and recommended resources',
+          'Probably one of the hardest things I have ever done. Completed a Masters, packing all programming modules taught in a 3-year undergraduate in one year. Very intense, but covered everything from Hack Assembly, C, Java, to leading a Mobile Fintech project for my Dissertation. Pleased to say that I have graduated too!',
       },
     ],
   },
   {
-    date: '2024-12-25',
+    date: 'Sept 2025 - Present',
     content: [
       {
-        title: '🐦‍⬛ Add activity section',
-        description: 'Add activity section to showcase my activity snippets',
+        title: '💼 InvesTech Associate at Project Destined (Junior SWE)',
+        description: 'Trying to get 1% better every day at Full-Stack SWE.',
       },
     ],
   },

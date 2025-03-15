@@ -1,7 +1,5 @@
 'use client'
-
 import { Fragment, useEffect, useRef, useState } from 'react'
-import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { Popover, Transition } from '@headlessui/react'
@@ -344,11 +342,6 @@ export function Header() {
                     }}
                   />
                   <div className="flex flex-row items-center gap-4">
-                    <Avatar
-                      large
-                      className="block h-16 w-16 origin-left"
-                      style={{ transform: 'var(--avatar-image-transform)' }}
-                    />
                     <div
                       className="text-3xl md:text-6xl font-bold tracking-tight flex flex-row"
                       style={{
@@ -357,7 +350,7 @@ export function Header() {
                       }}
                     >
                       <TypingAnimation
-                        className="text-3xl md:text-6xl font-bold tracking-tight"
+                        className="text-4xl md:text-6xl font-bold tracking-tight"
                         text={`Hi! My name is ${name} `}
                         duration={150}
                       />

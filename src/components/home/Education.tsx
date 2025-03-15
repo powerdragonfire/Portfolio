@@ -37,7 +37,6 @@ function EducationItem({ educationItem }: { educationItem: EducationItemType }) 
 
 export default function Education() {
 
-
   return (
     <div className="rounded-2xl border border-muted shadow-sm p-6">
       <h2 className="flex text-sm font-semibold">

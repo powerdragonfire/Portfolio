@@ -1,11 +1,7 @@
 import Link from 'next/link'
-
 import { ContainerInner, ContainerOuter } from '@/components/layout/Container'
 import { footerItems } from '@/config/siteConfig'
-import { ThemeToggle } from '@/components/shared/ThemeToggle'
 import { name } from '@/config/infoConfig'
-import SocialLinks from '@/components/home/SocialLinks'
-
 
 function NavLink({
   href,
@@ -41,9 +37,7 @@ export function Footer() {
                   <p className="text-sm text-muted-foreground">
                     &copy; {new Date().getFullYear()} {name}. All rights reserved.
                   </p>
-                  <ThemeToggle />
                 </div>
-                <SocialLinks className='mt-0' />
               </div>
             </div>
           </ContainerInner>

@@ -12,7 +12,7 @@ export const educationList: Array<EducationItemType> = [
   {
     school: 'Bristol University',
     major: 'MSc Computer Science',
-    logo: 'college',
+    logo: 'masters',
     start: '2023',
     end: '2024',
   },

@@ -4,7 +4,6 @@ import remarkGfm from 'remark-gfm'
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  transpilePackages: ['react-tweet'],
   pageExtensions: ['js', 'jsx', 'ts', 'tsx', 'mdx'],
   images: {
     unoptimized: true,

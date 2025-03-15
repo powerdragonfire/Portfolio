@@ -26,14 +26,14 @@ export const careerList: Array<CareerItemType> = [
   {
     company: 'Project Destined',
     title: 'Head of Talent Aquisition',
-    logo: 'education',
+    logo: 'real estate',
     start: '2022',
     end: '2023',
   },
   {
     company: 'Marks and Spencer',
     title: 'Dotcom Summer Intern',
-    logo: 'retail',
+    logo: 'shop',
     start: 'June 2022',
     end: 'Sept 2022',
   },

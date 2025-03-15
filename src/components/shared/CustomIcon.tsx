@@ -2,6 +2,8 @@
 
 import {
   Bank,
+  Building,
+  DeviceMobile,
   GithubLogo,
   XLogo,
   InstagramLogo,
@@ -11,13 +13,20 @@ import {
   Butterfly,
   Pill,
   WechatLogo,
-  DiscordLogo
+  DiscordLogo,
+  Storefront
 } from '@phosphor-icons/react'
 
 export function CustomIcon({ name, size = 20 }: { name: string; size?: number }) {
   switch (name) {
     case 'bank':
       return <Bank size={size} weight="duotone" />;
+    case 'shop':
+      return <Storefront size={size} weight="duotone" />
+    case 'real estate':
+      return <Building size={size} weight="duotone" />;
+    case 'mobile':
+      return <DeviceMobile size={size} weight="duotone" />;
     case 'github':
       return <GithubLogo size={size} weight="duotone" />;
     case 'x':
@@ -30,6 +39,8 @@ export function CustomIcon({ name, size = 20 }: { name: string; size?: number })
       return <Envelope size={size} weight="duotone" />;
     case "college":
       return <GraduationCap size={size} weight="duotone" />;
+    case "masters":
+      return <GraduationCap size={size} weight="fill" />;
     case "coffee":
       return <Coffee size={size} weight="duotone" />;
     case "pill":

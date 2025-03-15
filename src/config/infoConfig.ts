@@ -2,7 +2,6 @@ export * from './projects'
 export * from './changelog'
 export * from './education'
 export * from './career'
-export * from './activity'
 
 // personal info
 export const name = 'Mihir'
@@ -24,7 +23,6 @@ export const aboutParagraphs = [
 
 // blog
 export const blogHeadLine = 'Education'
-export const blogIntro = ''
 
 // social links
 export type SocialLinkType = {
@@ -35,11 +33,6 @@ export type SocialLinkType = {
 }
 
 export const socialLinks: Array<SocialLinkType> = [
-  {
-    name: 'Email',
-    icon: 'email',
-    href: 'mihirgandecha@outlook.com',
-  },
   {
     name: 'Github',
     icon: 'github',

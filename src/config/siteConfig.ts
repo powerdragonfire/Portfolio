@@ -43,4 +43,8 @@ export const navItems: Array<NavItemType> = [
     name: 'Journey',
     href: '/changelog',
   },
+  {
+    name: 'Contact',
+    href: '/#contact',
+  },
 ]

@@ -2,6 +2,7 @@
 import { Container } from '@/components/layout/Container'
 import Career from '@/components/home/Career'
 import Education from '@/components/home/Education'
+import ContactSection from '@/components/ContactSection'
 import { headline, introduction, appStoreUrl, cvUrl } from '@/config/infoConfig'
 import { Button } from '@/components/Button'
 import { ProjectCard } from '@/components/project/ProjectCard'
@@ -76,6 +77,7 @@ export default async function Home() {
             <Education />
           </div>
         </div>
+        <ContactSection />
       </Container>
     </>
   )

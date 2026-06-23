@@ -8,11 +8,11 @@ export const name = 'Mihir'
 export const headline = 'Co-Founder CTO & Full-Stack Engineer'
 export const introduction =
   'Building Spontai — a live AI travel app on the App Store — and shipping AI-native mobile and fintech products.'
-export const email = 'mihirgandecha@outlook.com'
+export const email = 'mihir@mihirgandecha.com'
 export const githubUsername = 'mihirgandecha'
 
 // hero CTAs
-export const appStoreUrl = 'https://apps.apple.com' // TODO: replace with live Spontai listing
+export const appStoreUrl = 'https://apps.apple.com/us/app/spontai/id6755359443'
 export const cvUrl = '/cv.pdf'
 
 // about page
@@ -76,9 +76,22 @@ export type SocialLinkType = {
 
 export const socialLinks: Array<SocialLinkType> = [
   {
-    name: 'Github',
+    name: 'GitHub',
+    ariaLabel: 'GitHub profile',
     icon: 'github',
     href: 'https://github.com/mihirgandecha',
+  },
+  {
+    name: 'LinkedIn',
+    ariaLabel: 'LinkedIn profile',
+    icon: 'linkedin',
+    href: 'https://linkedin.com/in/mihirgandecha',
+  },
+  {
+    name: 'App Store',
+    ariaLabel: 'Spontai on the App Store',
+    icon: 'app-store',
+    href: 'https://apps.apple.com/us/app/spontai/id6755359443',
   },
 ]
 

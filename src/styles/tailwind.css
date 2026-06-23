@@ -1,6 +1,6 @@
+@import './prism.css';
 @tailwind base;
 @tailwind components;
-@import './prism.css';
 @tailwind utilities;
 @layer base {
   :root {
@@ -29,6 +29,9 @@
       --chart-3: 197 37% 24%;
       --chart-4: 43 74% 66%;
       --chart-5: 27 87% 67%;
+      /* TrustBar: muted greyscale logo wall */
+      --trustbar-opacity: 0.4;
+      --trustbar-grayscale: 1;
     }
   
     .dark {
@@ -56,8 +59,29 @@
       --chart-3: 30 80% 55%;
       --chart-4: 280 65% 60%;
       --chart-5: 340 75% 55%;
+      /* light-grey text needs a touch more presence on dark */
+      --trustbar-opacity: 0.5;
+      --trustbar-grayscale: 1;
     }
   }
+
+@layer components {
+  .trust-logo {
+    opacity: var(--trustbar-opacity);
+    filter: grayscale(var(--trustbar-grayscale));
+    transition: opacity 0.35s ease, filter 0.35s ease;
+  }
+  .trust-logo:hover,
+  .trust-logo:focus-visible {
+    opacity: 1;
+    filter: grayscale(0);
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .trust-logo {
+      transition: none;
+    }
+  }
+}
   
 @layer base {
   * {

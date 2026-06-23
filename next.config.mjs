@@ -1,10 +1,12 @@
-import rehypePrism from '@mapbox/rehype-prism'
 import nextMDX from '@next/mdx'
-import remarkGfm from 'remark-gfm'
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   pageExtensions: ['js', 'jsx', 'ts', 'tsx', 'mdx'],
+  // Pin the workspace root so Turbopack ignores stray lockfiles outside the project.
+  turbopack: {
+    root: import.meta.dirname,
+  },
   images: {
     unoptimized: true,
     remotePatterns: [
@@ -27,8 +29,10 @@ const nextConfig = {
 const withMDX = nextMDX({
   extension: /\.mdx?$/,
   options: {
-    remarkPlugins: [remarkGfm],
-    rehypePlugins: [rehypePrism],
+    // Turbopack (default builder in Next 16) serializes loader options to Rust,
+    // so remark/rehype plugins must be referenced by string name, not by import.
+    remarkPlugins: ['remark-gfm'],
+    rehypePlugins: ['@mapbox/rehype-prism'],
   },
 })
 

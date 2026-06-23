@@ -7,6 +7,7 @@ import { Button } from '@/components/Button'
 import { ProjectCard } from '@/components/project/ProjectCard'
 import { projectHeadLine, projectIntro, projects, blogHeadLine, techIcons, } from '@/config/infoConfig'
 import IconCloud from "@/components/ui/icon-cloud";
+import { TrustBar } from '@/components/TrustBar'
 // import { TweetGrid } from "@/components/home/TweetGrid";
 
 
@@ -31,7 +32,7 @@ export default async function Home() {
               <Button href={appStoreUrl} target="_blank" rel="noopener noreferrer">
                 View Spontai on the App Store
               </Button>
-              <Button href={cvUrl} download variant="secondary">
+              <Button href={cvUrl} download="Mihir Gandecha CV.pdf" variant="secondary">
                 Download CV
               </Button>
             </div>
@@ -40,6 +41,8 @@ export default async function Home() {
             <IconCloud iconSlugs={techIcons} />
           </div>
         </div>
+        {/* trust bar — credibility row below the hero fold */}
+        <TrustBar />
         <div className="mt-6 border-t border-zinc-100 py-8 dark:border-zinc-700/40">
         </div>
         {/* projects */}

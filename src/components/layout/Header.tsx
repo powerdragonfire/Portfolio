@@ -2,7 +2,14 @@
 import { Fragment, useEffect, useRef, useState } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { Popover, Transition } from '@headlessui/react'
+import {
+  Popover,
+  PopoverButton,
+  PopoverPanel,
+  PopoverBackdrop,
+  Transition,
+  TransitionChild,
+} from '@headlessui/react'
 import clsx from 'clsx'
 
 import { Container } from '@/components/layout/Container'
@@ -23,9 +30,9 @@ function MobileNavItem({
 }) {
   return (
     <li>
-      <Popover.Button as={Link} href={href} className="block py-2">
+      <PopoverButton as={Link} href={href} className="block py-2">
         {children}
-      </Popover.Button>
+      </PopoverButton>
     </li>
   )
 }
@@ -35,12 +42,12 @@ function MobileNavigation(
 ) {
   return (
     <Popover {...props}>
-      <Popover.Button className="group flex items-center rounded-full px-4 py-2 text-sm font-medium shadow-lg ring-1 ring-muted backdrop-blur ">
+      <PopoverButton className="group flex items-center rounded-full px-4 py-2 text-sm font-medium shadow-lg ring-1 ring-muted backdrop-blur ">
         Menu
         <ChevronDownIcon className="ml-3 h-auto w-2" />
-      </Popover.Button>
-      <Transition.Root>
-        <Transition.Child
+      </PopoverButton>
+      <Transition>
+        <TransitionChild
           as={Fragment}
           enter="duration-150 ease-out"
           enterFrom="opacity-0"
@@ -49,9 +56,9 @@ function MobileNavigation(
           leaveFrom="opacity-100"
           leaveTo="opacity-0"
         >
-          <Popover.Overlay className="fixed inset-0 z-50 backdrop-blur-sm dark:bg-background/80" />
-        </Transition.Child>
-        <Transition.Child
+          <PopoverBackdrop className="fixed inset-0 z-50 backdrop-blur-sm dark:bg-background/80" />
+        </TransitionChild>
+        <TransitionChild
           as={Fragment}
           enter="duration-150 ease-out"
           enterFrom="opacity-0 scale-95"
@@ -60,14 +67,14 @@ function MobileNavigation(
           leaveFrom="opacity-100 scale-100"
           leaveTo="opacity-0 scale-95"
         >
-          <Popover.Panel
+          <PopoverPanel
             focus
             className="fixed inset-x-4 top-8 z-50 origin-top rounded-3xl p-8 ring-1 ring-muted bg-card"
           >
             <div className="flex flex-row-reverse items-center justify-between">
-              <Popover.Button aria-label="Close menu" className="-m-1 p-1">
+              <PopoverButton aria-label="Close menu" className="-m-1 p-1">
                 <XIcon className="h-6 w-6 text-muted-foreground" />
-              </Popover.Button>
+              </PopoverButton>
               <h2 className="text-sm font-medium text-muted-foreground">
                 {name}
               </h2>
@@ -79,9 +86,9 @@ function MobileNavigation(
                 ))}
               </ul>
             </nav>
-          </Popover.Panel>
-        </Transition.Child>
-      </Transition.Root>
+          </PopoverPanel>
+        </TransitionChild>
+      </Transition>
     </Popover>
   )
 }

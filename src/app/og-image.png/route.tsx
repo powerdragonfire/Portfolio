@@ -2,15 +2,12 @@ import { ImageResponse } from 'next/og'
 
 import { headline, introduction, name } from '@/config/infoConfig'
 
-export const alt = 'Mihir Gandecha — Co-Founder CTO & Full-Stack Engineer'
-export const size = {
+const size = {
   width: 1200,
   height: 630,
 }
 
-export const contentType = 'image/png'
-
-export default function Image() {
+export async function GET() {
   return new ImageResponse(
     (
       <div

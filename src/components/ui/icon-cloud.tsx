@@ -65,7 +65,12 @@ type IconData = Awaited<ReturnType<typeof fetchSimpleIcons>>;
 
 export default function IconCloud({ iconSlugs }: DynamicCloudProps) {
   const [data, setData] = useState<IconData | null>(null);
+  const [mounted, setMounted] = useState(false);
   const { theme } = useTheme();
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   useEffect(() => {
     fetchSimpleIcons({ slugs: iconSlugs }).then(setData);
@@ -78,6 +83,12 @@ export default function IconCloud({ iconSlugs }: DynamicCloudProps) {
       renderCustomIcon(icon, theme || "light"),
     );
   }, [data, theme]);
+
+  // The Cloud component generates a random canvas id on each render, which
+  // causes an SSR/client hydration mismatch. Render it only after mount.
+  if (!mounted) {
+    return <div style={cloudProps.containerProps?.style} aria-hidden />;
+  }
 
   return (
     // @ts-ignore

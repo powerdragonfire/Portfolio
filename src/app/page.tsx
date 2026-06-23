@@ -2,7 +2,8 @@
 import { Container } from '@/components/layout/Container'
 import Career from '@/components/home/Career'
 import Education from '@/components/home/Education'
-import { headline, introduction } from '@/config/infoConfig'
+import { headline, introduction, appStoreUrl, cvUrl } from '@/config/infoConfig'
+import { Button } from '@/components/Button'
 import { ProjectCard } from '@/components/project/ProjectCard'
 import { projectHeadLine, projectIntro, projects, blogHeadLine, techIcons, } from '@/config/infoConfig'
 import IconCloud from "@/components/ui/icon-cloud";
@@ -26,6 +27,14 @@ export default async function Home() {
             <p className="mt-6 text-base text-muted-foreground">
               {introduction}
             </p>
+            <div className="mt-8 flex flex-wrap gap-4">
+              <Button href={appStoreUrl} target="_blank" rel="noopener noreferrer">
+                View Spontai on the App Store
+              </Button>
+              <Button href={cvUrl} download variant="secondary">
+                Download CV
+              </Button>
+            </div>
           </div>
           <div className="relative flex size-full items-center justify-center overflow-hidden w-full px-20 md:px-0 md:w-2/3 ml-auto md:mr-8">
             <IconCloud iconSlugs={techIcons} />

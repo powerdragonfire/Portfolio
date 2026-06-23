@@ -5,11 +5,15 @@ export * from './career'
 
 // personal info
 export const name = 'Mihir'
-export const headline = 'Full-Stack Developer'
+export const headline = 'Co-Founder CTO & Full-Stack Engineer'
 export const introduction =
-  'Building digital experiences that empower innovation.'
+  'Building Spontai — a live AI travel app on the App Store — and shipping AI-native mobile and fintech products.'
 export const email = 'mihirgandecha@outlook.com'
 export const githubUsername = 'mihirgandecha'
+
+// hero CTAs
+export const appStoreUrl = 'https://apps.apple.com' // TODO: replace with live Spontai listing
+export const cvUrl = '/cv.pdf'
 
 // about page
 export const aboutMeHeadline = 'Junior SWE based in London'

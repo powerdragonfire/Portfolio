@@ -19,6 +19,41 @@ export type ChangelogItemType = {
 
 export const changelogList: Array<ChangelogItemType> = [
   {
+    date: 'Sept 2024 - Present',
+    content: [
+      {
+        title: '💼 Wellington Management',
+        description:
+          'Started my first full-time software engineering role at Wellington Management, working on Mosaic: an internal platform used by 300+ global developers. This role marked my transition from Computer Science conversion graduate into a professional software engineer building production-grade tooling inside a global investment management firm.',
+        bullets: [
+          'Worked across React, TypeScript, AWS, Jenkins CI/CD, CloudWatch, Kibana, Sonar, Jest, Vitest, and React Testing Library.',
+          'Supported scalable deployments and developer tooling across Mosaic, improving development-to-production workflows.',
+          'Introduced improvements such as HTTP caching, hot module reloading, symbolic linking, Storybook, and Figma-driven UI workflows.',
+          'Gained hands-on experience with production monitoring, infrastructure, code quality, testing, and platform engineering in a large-scale financial technology environment.',
+        ],
+        promotions: [
+          { title: 'Technology Associate', period: 'Sept 2024' },
+          { title: 'Core Software Engineer (Mid-tier)', period: 'Jun 2026' },
+        ],
+      },
+    ],
+  },
+  {
+    date: 'Sept 2023 - Sept 2024',
+    content: [
+      {
+        title: '🎓 Career Switch: MSc Computer Science at Bristol University',
+        description:
+          'After studying Liberal Arts and building experience across consulting, operations, and start-up environments, I made the decision to formally switch into software engineering by completing an MSc Computer Science conversion at the University of Bristol.',
+        bullets: [
+          'Completed an intensive conversion MSc covering C, data structures and algorithms, computer architecture, Java, software engineering, and a client-facing summer project.',
+          'Built the technical foundation needed to move from being interested in technology to developing real full-stack applications.',
+          'Awarded a £5,000 MyWorld scholarship supporting postgraduate students in the creative technology industry.',
+        ],
+      },
+    ],
+  },
+  {
     date: 'Jan 2023 – Sept 2023',
     content: [
       {
@@ -78,8 +113,10 @@ export const changelogList: Array<ChangelogItemType> = [
     date: 'Sept 2024 – Present',
     content: [
       {
-        title: '💼 InvesTech Associate at Wellington Management (Platform Engineer)',
-        description: 'Full-stack platform engineer improving enterprise desktop applications serving 2,000+ global users. Trying to get 1% better every day.',
+        title:
+          '💼 InvesTech Associate at Wellington Management (Platform Engineer)',
+        description:
+          'Full-stack platform engineer improving enterprise desktop applications serving 2,000+ global users. Trying to get 1% better every day.',
       },
     ],
   },

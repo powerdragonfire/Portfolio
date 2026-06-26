@@ -11,6 +11,7 @@
   },
   "browserslist": "defaults, not ie <= 11",
   "dependencies": {
+    "@dev.icons/react": "^1.1.0",
     "@headlessui/react": "^2.2.10",
     "@mapbox/rehype-prism": "^0.9.0",
     "@mdx-js/loader": "^3.1.1",
@@ -29,8 +30,10 @@
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "coreychiu-portfolio-template": "file:",
+    "embla-carousel-react": "^8.6.0",
     "fast-glob": "^3.3.3",
     "feed": "^5.2.1",
+    "framer-motion": "^12.42.0",
     "gray-matter": "^4.0.3",
     "lucide-react": "^1.21.0",
     "next": "16.2.9",

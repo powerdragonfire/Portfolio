@@ -20,6 +20,16 @@ export type ProjectItemType = {
 // projects
 export const projects: Array<ProjectItemType> = [
   {
+    name: 'SmartKnob',
+    description:
+      'Assembled and flashed three SmartKnob View Base PCB v0.5 boards — a haptic-feedback rotary encoder driven by a BLDC motor under Field-Oriented Control. Tuned FOC parameters and haptic detent profiles in C++, configured the 8-LED ring for visual feedback, and flashed firmware via PlatformIO/ESP32.',
+    link: { href: '/projects/smartknob', label: 'SmartKnob' },
+    date: '2025',
+    category: ['Hardware', 'Embedded'],
+    techStack: ['C++', 'ESP32', 'PlatformIO', 'FOC', 'BLDC', 'LED'],
+    tags: ['Hardware', 'Embedded', 'PCB', 'Haptics', 'Open Source'],
+  },
+  {
     name: 'Spontai',
     description:
       'AI-powered travel planning app (React Native/Expo) built as co-founder & CTO. Shipped fortnightly releases driven by 50+ TestFlight feedback items. Built production RAG pipeline with Claude & OpenAI for personalized itineraries. Managed Supabase infrastructure (60+ migrations, 20 edge functions), EAS builds, App Store deployment, and implemented Sentry monitoring for cost tracking across LLM providers.',
@@ -36,21 +46,16 @@ export const projects: Array<ProjectItemType> = [
       'OpenAI',
       'pgvector',
     ],
-    tags: [
-      'Travel',
-      'AI',
-      'RAG',
-      'Mobile',
-      'Founder',
-      'LLM',
-      'Production',
-    ],
+    tags: ['Travel', 'AI', 'RAG', 'Mobile', 'Founder', 'LLM', 'Production'],
   },
   {
     name: 'Wellington Management',
     description:
       'Full-stack platform engineer improving enterprise desktop application serving 2,000+ global users. Optimized frontend bundling and build tooling (Webpack to RsPack), reducing dev cycle times and implementing HTTP caching improvements. Enhanced testing infrastructure with Jest, RTL, and Storybook integration. Improved backend API performance and monitoring with enterprise-grade logging and alerting on AWS infrastructure.',
-    link: { href: 'https://www.wellington.com/en', label: 'Wellington Management' },
+    link: {
+      href: 'https://www.wellington.com/en',
+      label: 'Wellington Management',
+    },
     logo: '/images/icon/well-mgt.png',
     date: 'Sept 2024 – Present',
     category: ['Enterprise', 'Platform', 'Full-Stack'],
@@ -70,7 +75,10 @@ export const projects: Array<ProjectItemType> = [
     name: 'Blockbuster Retro',
     description:
       "Contract SEO work for blockbusterretro.com that improved the London ranking for 'pokemon' from 12 to 2.",
-    link: { href: 'https://www.blockbusterretro.com/', label: 'Blockbuster Retro' },
+    link: {
+      href: 'https://www.blockbusterretro.com/',
+      label: 'Blockbuster Retro',
+    },
     category: ['SEO', 'Contract', 'Ecommerce'],
     tags: ['SEO', 'Search Ranking', 'Contract Work', 'Ecommerce'],
   },
@@ -78,7 +86,10 @@ export const projects: Array<ProjectItemType> = [
     name: 'Marks and Spencer',
     description:
       'Led sustainability research project for carbon-free post-purchase experience, developing short/medium/long-term roadmap for green delivery options. Conducted customer experience research on sustainable nudges through competitor analysis and prototype testing. Learned web development fundamentals and built checkout page prototype demonstrating sustainable solution design for executive presentation.',
-    link: { href: 'https://www.marksandspencer.com/', label: 'Marks and Spencer' },
+    link: {
+      href: 'https://www.marksandspencer.com/',
+      label: 'Marks and Spencer',
+    },
     logo: '/images/icon/ms-logo.png',
     date: 'Jun 2022 – Sept 2022',
     category: ['Internship', 'Sustainability', 'UX Research'],
@@ -93,8 +104,19 @@ export const projects: Array<ProjectItemType> = [
     logo: '/images/icon/pd-logo.png',
     date: 'Jan 2023 – Jul 2023',
     category: ['Operations', 'Talent Acquisition', 'Marketing'],
-    techStack: ['Monday.com', 'Handshake', 'LinkedIn Recruiter', 'Zapier', 'Excel'],
-    tags: ['Talent Acquisition', 'Operations', 'Marketing Automation', 'Production'],
+    techStack: [
+      'Monday.com',
+      'Handshake',
+      'LinkedIn Recruiter',
+      'Zapier',
+      'Excel',
+    ],
+    tags: [
+      'Talent Acquisition',
+      'Operations',
+      'Marketing Automation',
+      'Production',
+    ],
   },
   {
     name: 'Nuumi',
@@ -122,7 +144,7 @@ export const projects: Array<ProjectItemType> = [
     name: 'Stag Java Game',
     description: 'Simple Text Adventure Game (STAG)',
     link: {
-      href: 'https://github.com/mihirgandecha/JAVA-CW-2023',
+      href: 'https://github.com/powerdragonfire/JAVA-CW-2023',
       label: 'Github',
     },
     logo: '/images/icon/stag.png',

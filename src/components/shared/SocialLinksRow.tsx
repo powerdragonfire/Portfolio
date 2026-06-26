@@ -1,9 +1,10 @@
-"use client"
+'use client'
 import Link from 'next/link'
 import clsx from 'clsx'
-import { Apple, GitGraph} from 'lucide-react'
+import { GitGraph } from 'lucide-react'
 import { socialLinks } from '@/config/infoConfig'
 import { LinkedinLogoIcon } from '@phosphor-icons/react'
+import { Apple } from '@dev.icons/react'
 
 const iconMap = {
   GitHub: GitGraph,
@@ -13,7 +14,12 @@ const iconMap = {
 
 export function SocialLinksRow({ className }: { className?: string }) {
   return (
-    <div className={clsx('flex flex-wrap items-center justify-center gap-3', className)}>
+    <div
+      className={clsx(
+        'flex flex-wrap items-center justify-center gap-3',
+        className,
+      )}
+    >
       {socialLinks.map((link) => {
         const Icon = iconMap[link.name as keyof typeof iconMap]
 

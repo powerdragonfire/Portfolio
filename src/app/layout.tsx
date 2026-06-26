@@ -1,8 +1,28 @@
 import type { Metadata } from 'next'
+import { Bricolage_Grotesque, JetBrains_Mono, Inter } from 'next/font/google'
 
 import { Providers } from '@/app/providers'
 import { Layout } from '@/components/layout/Layout'
 import '@/styles/tailwind.css'
+
+const bricolage = Bricolage_Grotesque({
+  subsets: ['latin'],
+  variable: '--font-display',
+  display: 'swap',
+  axes: ['opsz', 'wdth'],
+})
+
+const jetbrainsMono = JetBrains_Mono({
+  subsets: ['latin'],
+  variable: '--font-mono',
+  display: 'swap',
+})
+
+const inter = Inter({
+  subsets: ['latin'],
+  variable: '--font-body',
+  display: 'swap',
+})
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://mihirgandecha.com'),
@@ -36,7 +56,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="h-full antialiased" suppressHydrationWarning>
-      <body className="flex h-full">
+      <body className={`flex h-full ${bricolage.variable} ${jetbrainsMono.variable} ${inter.variable}`}>
         <Providers>
           <div className="flex w-full">
             <Layout>{children}</Layout>

@@ -8,15 +8,16 @@ export const name = 'Mihir'
 export const headline = 'Co-Founder CTO & Full-Stack Engineer'
 export const introduction =
   'Building Spontai — a live AI travel app on the App Store — and shipping AI-native mobile and fintech products.'
-export const email = 'mihir@mihirgandecha.com'
-export const githubUsername = 'mihirgandecha'
+export const email = 'mihirgandecha@outlook.com'
+export const githubUsername = 'powerdragonfire'
 
 // hero CTAs
 export const appStoreUrl = 'https://apps.apple.com/us/app/spontai/id6755359443'
 export const cvUrl = '/cv.pdf'
 
 // about page
-export const aboutMeHeadline = 'Full-Stack Engineer & Co-Founder CTO, based in London'
+export const aboutMeHeadline =
+  'Full-Stack Engineer & Co-Founder CTO, based in London'
 export const aboutParagraphs = [
   'I’m a Full-Stack Engineer and Co-Founder CTO based in London. I built Spontai — an AI travel planning iOS app — from scratch and shipped it to the UK and US App Store. At the same time, I am a Platform Engineer at Wellington Management building enterprise applications for 300+ developers, and a Mobile Engineer at Mynt Finance, a Kenyan neobank.',
   'I studied Liberal Arts at Warwick and converted to an MSc Computer Science at Bristol — which means I bring both a systems-thinking lens and a humanities instinct to everything I build.',
@@ -58,8 +59,11 @@ export type SkillGroupType = {
 
 export const skillStack: Array<SkillGroupType> = [
   { category: 'Mobile', skills: ['React Native', 'Expo', 'TypeScript'] },
-  { category: 'Backend', skills: [ 'Node.js', 'Express / Axios', 'MongoDB' ] },
-  { category: 'AI', skills: ['Claude API', 'Multi-agent pipelines', 'RAG', 'OpenTelemetry'] },
+  { category: 'Backend', skills: ['Node.js', 'Express / Axios', 'MongoDB'] },
+  {
+    category: 'AI',
+    skills: ['Claude API', 'Multi-agent pipelines', 'RAG', 'OpenTelemetry'],
+  },
   { category: 'Cloud', skills: ['AWS'] },
 ]
 
@@ -79,7 +83,7 @@ export const socialLinks: Array<SocialLinkType> = [
     name: 'GitHub',
     ariaLabel: 'GitHub profile',
     icon: 'github',
-    href: 'https://github.com/mihirgandecha',
+    href: 'https://github.com/powerdragonfire',
   },
   {
     name: 'LinkedIn',

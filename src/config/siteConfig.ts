@@ -45,6 +45,6 @@ export const navItems: Array<NavItemType> = [
   },
   {
     name: 'Contact',
-    href: '/#contact',
+    href: '/contact',
   },
 ]

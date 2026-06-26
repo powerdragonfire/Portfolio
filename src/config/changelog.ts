@@ -39,6 +39,25 @@ export const changelogList: Array<ChangelogItemType> = [
     ],
   },
   {
+    date: 'Oct 2025 - Present',
+    content: [
+      {
+        title: '🚀 Spontai — Co-Founder CTO',
+        description:
+          'Built and shipped Spontai, an AI travel planning app designed to generate personalised itineraries from a user’s location, mood, preferences, and available time. I worked on it part-time as sole founder, owning the full product lifecycle from architecture and AI backend to App Store metadata, marketing, user feedback, and support.',
+        bullets: [
+          'Built the mobile app using React Native, Expo, TypeScript, Supabase, and EAS, shipping regular iOS and Android releases.',
+          'Processed 50+ TestFlight feedback items into prioritised issues, using user feedback to drive fortnightly product iterations.',
+          'Built a production RAG pipeline for personalised itinerary generation using OpenAI, pgvector semantic search, keyword search, community event scoring, and Google Places fallback.',
+          'Managed Supabase infrastructure across 60+ database migrations and 20 edge functions, balancing performance, cost, and scalability.',
+          'Used Claude Code with MCP integrations, Expo, Sentry, Figma, Context7, and custom CLAUDE.md rules to speed up development and create agentic workflows.',
+          'Implemented monitoring with Sentry to track LLM usage, latency, cache hit rates, provider costs, structured logs, tracing, platform, device, and app version.',
+        ],
+        promotions: [{ title: 'Co-Founder CTO', period: 'Oct 2025' }],
+      },
+    ],
+  },
+  {
     date: 'Sept 2023 - Sept 2024',
     content: [
       {

@@ -6,6 +6,9 @@ frontend:
         - npm ci
     build:
       commands:
+        - echo "Cleaning old build output"
+        - rm -rf .next out
+        - echo "Starting Next build"
         - npm run build
   artifacts:
     baseDirectory: .next

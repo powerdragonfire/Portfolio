@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "clean": "rmdir /s /q .next || echo .next not found",
+    "clean": "rm -rf .next",
     "build": "npm run clean && next build",
     "start": "next start",
     "lint": "eslint ."

@@ -3,6 +3,7 @@ import { Bricolage_Grotesque, JetBrains_Mono, Inter } from 'next/font/google'
 
 import { Providers } from '@/app/providers'
 import { Layout } from '@/components/layout/Layout'
+import { structuredData } from '@/lib/structuredData'
 import '@/styles/tailwind.css'
 
 const bricolage = Bricolage_Grotesque({
@@ -24,27 +25,28 @@ const inter = Inter({
   display: 'swap',
 })
 
+const siteTitle = 'Mihir Gandecha — Contract Software Engineer & Co-Founder CTO, London'
+const siteDescription =
+  'Contract Software Engineer based in London, available for full-stack, mobile, and AI engineering projects. Creator of Spontai, live iOS app on the App Store. Ex-Wellington Management, ex-Mynt Finance.'
+
 export const metadata: Metadata = {
   metadataBase: new URL('https://mihirgandecha.com'),
-  title: 'Mihir Gandecha — Co-Founder CTO & Full-Stack Engineer',
-  description:
-    'Mobile + AI engineer based in London. Creator of Spontai, live iOS app on the App Store. Ex-Wellington Management, ex-Mynt Finance.',
+  title: siteTitle,
+  description: siteDescription,
   alternates: {
     canonical: '/',
   },
   openGraph: {
-    title: 'Mihir Gandecha — Co-Founder CTO & Full-Stack Engineer',
-    description:
-      'Mobile + AI engineer based in London. Creator of Spontai, live iOS app on the App Store. Ex-Wellington Management, ex-Mynt Finance.',
+    title: siteTitle,
+    description: siteDescription,
     url: 'https://mihirgandecha.com',
     images: ['/og-image.png'],
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Mihir Gandecha — Co-Founder CTO & Full-Stack Engineer',
-    description:
-      'Mobile + AI engineer based in London. Creator of Spontai, live iOS app on the App Store. Ex-Wellington Management, ex-Mynt Finance.',
+    title: siteTitle,
+    description: siteDescription,
     images: ['/og-image.png'],
   },
 }
@@ -57,6 +59,10 @@ export default function RootLayout({
   return (
     <html lang="en" className="h-full antialiased" suppressHydrationWarning>
       <body className={`flex h-full ${bricolage.variable} ${jetbrainsMono.variable} ${inter.variable}`}>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        />
         <Providers>
           <div className="flex w-full">
             <Layout>{children}</Layout>

@@ -4,15 +4,27 @@ import { Container } from '@/components/layout/Container'
 import { PhotoCarousel, type CarouselPhoto } from '@/components/PhotoCarousel'
 
 const aboutPhotos: CarouselPhoto[] = [
-  { src: '/images/mihir-graduation.jpg', alt: 'Graduating from University of Warwick', objectClass: 'object-[50%_15%]' },
-  { src: '/images/mihir-grad-group.jpg', alt: 'Bristol MSc Computer Science graduation', objectClass: 'object-[50%_30%]' },
-  { src: '/images/mihir-event.jpg', alt: 'SEO London Real Estate awards at Goldman Sachs', objectClass: 'object-[50%_15%]' },
+  {
+    src: '/images/mihir-graduation.jpg',
+    alt: 'Graduating from University of Warwick',
+    objectClass: 'object-[50%_15%]',
+  },
+  {
+    src: '/images/mihir-grad-group.jpg',
+    alt: 'Bristol MSc Computer Science graduation',
+    objectClass: 'object-[50%_30%]',
+  },
+  {
+    src: '/images/mihir-event.jpg',
+    alt: 'SEO London Real Estate awards at Goldman Sachs',
+    objectClass: 'object-[50%_15%]',
+  },
 ]
 
 export const metadata: Metadata = {
   title: 'About',
   description:
-    'Full-Stack Engineer and Co-Founder CTO based in London, building AI-native mobile and fintech products.',
+    'Contract Software Engineer based in London, available for full-stack, mobile, and AI engineering projects. Also Co-Founder CTO building AI-native mobile and fintech products.',
 }
 
 export default function About() {

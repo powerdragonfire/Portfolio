@@ -5,9 +5,9 @@ export * from './career'
 
 // personal info
 export const name = 'Mihir'
-export const headline = 'Co-Founder CTO & Full-Stack Engineer'
+export const headline = 'Contract Software Engineer & Co-Founder CTO, London'
 export const introduction =
-  'Building Spontai — a live AI travel app on the App Store — and shipping AI-native mobile and fintech products.'
+  'Available for contract engineering work in London. Building Spontai — a live AI travel app on the App Store — and shipping AI-native mobile and fintech products.'
 export const email = 'mihirgandecha@outlook.com'
 export const githubUsername = 'powerdragonfire'
 
@@ -17,9 +17,9 @@ export const cvUrl = '/cv.pdf'
 
 // about page
 export const aboutMeHeadline =
-  'Full-Stack Engineer & Co-Founder CTO, based in London'
+  'Contract Software Engineer & Co-Founder CTO, based in London'
 export const aboutParagraphs = [
-  'I’m a Full-Stack Engineer and Co-Founder CTO based in London. I built Spontai — an AI travel planning iOS app — from scratch and shipped it to the UK and US App Store. At the same time, I am a Platform Engineer at Wellington Management building enterprise applications for 300+ developers, and a Mobile Engineer at Mynt Finance, a Kenyan neobank.',
+  'I’m a Full-Stack Engineer based in London, available for contract and freelance engineering work. I built Spontai — an AI travel planning iOS app — from scratch and shipped it to the UK and US App Store. At the same time, I am a Platform Engineer at Wellington Management building enterprise applications for 300+ developers, and a Mobile Engineer at Mynt Finance, a Kenyan neobank.',
   'I studied Liberal Arts at Warwick and converted to an MSc Computer Science at Bristol — which means I bring both a systems-thinking lens and a humanities instinct to everything I build.',
   'Outside of code I raised £71,000 for Dig Deep by climbing Kilimanjaro, and I’m currently obsessed with Japan trip planning (which is how Spontai started).',
 ]

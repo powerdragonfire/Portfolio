@@ -20,7 +20,8 @@ export default function ContactSection() {
         </a>
 
         <p className="mt-6 max-w-xl text-sm text-muted-foreground leading-relaxed">
-          Open to founding engineer, full-stack, and mobile roles at UK AI-native and fintech companies.
+          Available for contract and freelance full-stack, mobile, and AI engineering work in London and
+          remotely — as well as founding engineer roles at UK AI-native and fintech companies.
           Also happy to talk Spontai, trading cards, or Japan.
         </p>
 

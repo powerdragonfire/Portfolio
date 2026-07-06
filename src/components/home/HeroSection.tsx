@@ -73,11 +73,11 @@ export function HeroSection() {
       {/* Descriptor */}
       <motion.div variants={fadeUp} className="mt-5 flex flex-wrap items-center gap-x-3 gap-y-1">
         <span className="font-mono text-xs uppercase tracking-widest text-primary">
-          Co-Founder CTO · Full-Stack Engineer
+          Contract Software Engineer · Co-Founder CTO
         </span>
         <span className="text-muted-foreground font-mono text-xs" aria-hidden="true">·</span>
         <span className="font-mono text-xs uppercase tracking-widest text-muted-foreground">
-          Bristol / London
+          London · Open to Contract Work
         </span>
       </motion.div>
 

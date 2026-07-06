@@ -4,16 +4,9 @@ import { Container } from '@/components/layout/Container'
 import { PhotoCarousel, type CarouselPhoto } from '@/components/PhotoCarousel'
 
 const aboutPhotos: CarouselPhoto[] = [
-  {
-    src: '/images/mihir-graduation.jpg',
-    alt: 'Mihir Gandecha',
-  },
-  {
-    src: '/images/mihir-grad-group.jpg',
-    alt: 'Mihir Gandecha',
-  },
-  // Add more photos here — drop them in /public/images/ and reference them below
-  // { src: '/images/mihir-2.jpg', alt: 'Mihir Gandecha' },
+  { src: '/images/mihir-graduation.jpg', alt: 'Graduating from University of Warwick', objectClass: 'object-[50%_15%]' },
+  { src: '/images/mihir-grad-group.jpg', alt: 'Bristol MSc Computer Science graduation', objectClass: 'object-[50%_30%]' },
+  { src: '/images/mihir-event.jpg', alt: 'SEO London Real Estate awards at Goldman Sachs', objectClass: 'object-[50%_15%]' },
 ]
 
 export const metadata: Metadata = {

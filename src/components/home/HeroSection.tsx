@@ -73,7 +73,7 @@ export function HeroSection() {
       {/* Descriptor */}
       <motion.div variants={fadeUp} className="mt-5 flex flex-wrap items-center gap-x-3 gap-y-1">
         <span className="font-mono text-xs uppercase tracking-widest text-primary">
-          Developer &amp; Designer
+          Co-Founder CTO · Full-Stack Engineer
         </span>
         <span className="text-muted-foreground font-mono text-xs" aria-hidden="true">·</span>
         <span className="font-mono text-xs uppercase tracking-widest text-muted-foreground">
@@ -89,14 +89,6 @@ export function HeroSection() {
         <Link href={cvUrl} download="Mihir Gandecha CV.pdf" className="btn-ghost">
           Download CV
         </Link>
-      </motion.div>
-
-      {/* Scroll cue */}
-      <motion.div
-        variants={fadeUp}
-        className="mt-10 font-mono text-[10px] uppercase tracking-[0.25em] text-muted-foreground"
-      >
-        Scroll ↓
       </motion.div>
     </motion.div>
   )

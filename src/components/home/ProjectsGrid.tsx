@@ -63,10 +63,27 @@ function BentoTile({
           <h3 className={`font-display font-bold text-foreground leading-tight tracking-tight group-hover:text-primary transition-colors duration-200 ${large ? 'text-3xl sm:text-4xl' : 'text-xl sm:text-2xl'}`}>
             {project.name}
           </h3>
-          {large && (
-            <p className="mt-3 text-sm text-muted-foreground line-clamp-3">
-              {project.description}
-            </p>
+
+          {project.caseStudy ? (
+            <dl className="mt-4 space-y-3">
+              {(['problem', 'role', 'outcome'] as const).map((key) => (
+                <div key={key}>
+                  <dt className="font-mono text-[9px] uppercase tracking-[0.2em] text-primary/70">
+                    {key}
+                  </dt>
+                  <dd className="mt-0.5 text-sm text-muted-foreground leading-snug">
+                    {project.caseStudy![key]}
+                  </dd>
+                </div>
+              ))}
+            </dl>
+          ) : (
+            !project.hideCardDescription &&
+            project.description && (
+              <p className={`mt-3 text-sm text-muted-foreground ${large ? 'line-clamp-3' : 'line-clamp-2'}`}>
+                {project.description}
+              </p>
+            )
           )}
         </div>
 
